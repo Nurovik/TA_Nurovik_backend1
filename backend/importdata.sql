@@ -1,0 +1,2 @@
+INSERT INTO `db_blfc`.`jadwal`(`idjadwal`, `team1`, `team2`, `goal1`, `goal2`, `hari`, `tempat`, `status`, `liga_idliga`, `flag`) VALUES (2, 2, 3, 3, 0, '2021-11-04 21:49:33', 'Lapangan Budi Luhur', 'HF', 1, 0);
+INSERT INTO `db_blfc`.`jadwal`(`idjadwal`, `team1`, `team2`, `goal1`, `goal2`, `hari`, `tempat`, `status`, `liga_idliga`, `flag`) VALUES (3, 1, 4, 3, 0, '2021-11-04 21:49:33', 'Lapangan Budi Luhur', 'HF', 1, 0);
