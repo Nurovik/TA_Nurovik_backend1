@@ -59,7 +59,7 @@ public class NewsDaoImpl implements NewsDao {
             });
         }else{
 
-            listnews = jdbcTemplate.query(SQL_SELECT_ALL_news , new RowMapper<News>() {
+            listnews = jdbcTemplate.query(SQL_SELECT_ALL_news +where , new RowMapper<News>() {
                 @Override
                 public News mapRow(ResultSet rs, int rowNum) throws SQLException {
 
