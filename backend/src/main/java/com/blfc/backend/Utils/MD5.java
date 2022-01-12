@@ -49,7 +49,7 @@ public class MD5 {
 
     public static String encrypt(final String dataToEncrypt) {
         String initialVector = "0123456789123456";
-        String secretKey = "sumb3rb@R0K@H";
+        String secretKey = "BlFc";
         String encryptedData = null;
 
         try {
@@ -81,7 +81,7 @@ public class MD5 {
 
     public static String decrypt(final String encryptedData) {
         String initialVector = "0123456789123456"; //16 carakter (Block)
-        String secretKey = "sumb3rb@R0K@H";
+        String secretKey = "BlFc";
         String decryptedData = null;
 
         try {
