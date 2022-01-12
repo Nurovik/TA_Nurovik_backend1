@@ -65,12 +65,12 @@
                      <div class="col-md-6">
                         <div class="right_top_section">
                            <!-- social icon -->
-                           <ul class="social-icons pull-left">
+<!--                           <ul class="social-icons pull-left">
                               <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
                               <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
                               <li><a class="youtube" href="#"><i class="fa fa-youtube-play"></i></a></li>
                               <li><a class="pinterest" href="#"><i class="fa fa-pinterest-p"></i></a></li>
-                           </ul>
+                           </ul>-->
                            <!-- end social icon -->
                            <!-- button section -->
                            <ul class="login">
@@ -78,9 +78,9 @@
                                  <a href="LoginController" class="login"><i class="fa fa-user"></i>Login</a>
                               </li>
                               <li>
-                                 <div class="cart-option">
+<!--                                 <div class="cart-option">
                                     <a href="#"><i class="fa fa-shopping-cart"></i>Register</a>
-                                 </div>
+                                 </div>-->
                               </li>
                            </ul>
                            <!-- end button section -->
@@ -109,13 +109,13 @@
                                          <li class="active"><a href="CmsNewsController">News</a></li>
                                           <li><a href="CmsPemainController">Team</a></li>
                                           <li><a href="KlasmenController">Competition</a></li>
-                                          <li><a href="about.html">Galery</a></li>
+                                          <!--<li><a href="about.html">Galery</a></li>-->
                                      
                                        </ul>
                                     </div>
                                     <!-- /.nav-collapse -->
                                  </nav>
-                                 <div class="search-bar">
+<!--                                 <div class="search-bar">
                                     <div id="imaginary_container">
                                        <div class="input-group stylish-input-group">
                                           <input type="text" class="form-control"  placeholder="Search" >
@@ -124,7 +124,7 @@
                                           </span>
                                        </div>
                                     </div>
-                                 </div>
+                                 </div>-->
                               </div>
                            </div>
                         </div>

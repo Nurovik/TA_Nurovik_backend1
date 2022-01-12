@@ -68,23 +68,23 @@
                      <div class="col-md-6">
                         <div class="right_top_section">
                            <!-- social icon -->
-                           <ul class="social-icons pull-left">
+<!--                           <ul class="social-icons pull-left">
                               <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
                               <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
                               <li><a class="youtube" href="#"><i class="fa fa-youtube-play"></i></a></li>
                               <li><a class="pinterest" href="#"><i class="fa fa-pinterest-p"></i></a></li>
-                           </ul>
+                           </ul>-->
                            <!-- end social icon -->
                            <!-- button section -->
                            <ul class="login">
                               <li class="login-modal">
                                  <a href="LoginController" class="login"><i class="fa fa-user"></i>Login</a>
                               </li>
-                              <li>
+<!--                              <li>
                                  <div class="cart-option">
                                     <a href="#"><i class="fa fa-shopping-cart"></i>Register</a>
                                  </div>
-                              </li>
+                              </li>-->
                            </ul>
                            <!-- end button section -->
                         </div>
@@ -112,7 +112,7 @@
                                           <li class="active"><a href="CmsNewsController">News</a></li>
                                           <li><a href="CmsPemainController">Team</a></li>
                                           <li><a href="KlasmenController">Competition</a></li>
-                                          <li><a href="about.html">Galery</a></li>
+                                          <!--<li><a href="about.html">Galery</a></li>-->
 <!--                                          <li><a href="news.html">News</a></li>
                                           <li><a href="blog.html">Blog</a></li>
                                           <li><a href="contact.html">contact</a></li>-->
@@ -205,14 +205,14 @@
                </a>
             </div>
             <!-- /.carousel -->
-            <div class="news">
+<!--            <div class="news">
                <div class="container">
                   <div class="heading-slider">
                      <p class="headline"><i class="fa fa-star" aria-hidden="true"></i> Top Headlines :</p>
-                     <!--made by vipul mirajkar thevipulm.appspot.com-->
+                     made by vipul mirajkar thevipulm.appspot.com
                      <h1>
                          
-                         <!--top headlines-->
+                         top headlines
                      <a href="" class="typewrite" data-period="2000" data-type='[ "Contrary to popular belief, Lorem Ipsum is not simply random text.", "Lorem Ipsum is simply dummy text of the printing and typesetting industry.", "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."]'>
                      <span class="wrap"></span>
                      </a>
@@ -221,10 +221,10 @@
                      </a>
                   </div>
                </div>
-            </div>
+            </div>-->
          </div>
       </section>
-      <div class="matchs-info">
+<!--      <div class="matchs-info">
          <div class="col-md-6 col-sm-6 col-xs-12">
             <div class="row">
                <div class="full">
@@ -264,7 +264,7 @@
                </div>
             </div>
          </div>
-      </div>
+      </div>-->
       <section id="contant" class="contant">
          <div class="container">
             <div class="row">
