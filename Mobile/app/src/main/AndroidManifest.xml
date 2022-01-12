@@ -12,7 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".Activity.ActivityJadwal"></activity>
+        <activity android:name=".Activity.ActivityEditScore"></activity>
+        <activity android:name=".Activity.ActivityLogin" />
+        <activity android:name=".Activity.ActivityJadwal" />
         <activity android:name=".Activity.ActivityPemainDetail" />
         <activity android:name=".Activity.ActivityPemain" />
         <activity android:name=".Activity.ActivityKlasmen" />

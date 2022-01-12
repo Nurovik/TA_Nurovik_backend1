@@ -65,7 +65,7 @@ public class ActivityPemainDetail extends AppCompatActivity {
     }
 
     private static final String[] ANIMATION_TYPE = new String[]{
-            "News","klasmen",  "Jadwal", "Right to Left"
+            "News","klasmen",  "Jadwal", "Login"
     };
 
     private void showSingleChoiceDialog() {
@@ -92,7 +92,11 @@ public class ActivityPemainDetail extends AppCompatActivity {
                     in.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                     getApplicationContext().startActivity(in);
 
-                } else if (selected.equalsIgnoreCase("Right to Left")) {
+                } else if (selected.equalsIgnoreCase("Login")) {
+
+                    Intent in = new Intent(getApplicationContext(), ActivityLogin.class);
+                    in.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    getApplicationContext().startActivity(in);
 
                 }
 

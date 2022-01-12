@@ -10,9 +10,17 @@ public class Jadwal {
     private long hari;
     private String tempat;
     private String status;
+    private int idliga;
     private String namaliga;
     private int matchday;
 
+    public int getIdliga() {
+        return idliga;
+    }
+
+    public void setIdliga(int idliga) {
+        this.idliga = idliga;
+    }
 
     public int getId() {
         return id;

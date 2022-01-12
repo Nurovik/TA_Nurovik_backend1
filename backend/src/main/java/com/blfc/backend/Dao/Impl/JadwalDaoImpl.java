@@ -21,7 +21,7 @@ public class JadwalDaoImpl implements JadwalDao {
     JdbcTemplate jdbcTemplate;
 
 
-    private String SELECT_ALL_JADWAL = "SELECT j.idjadwal, t.namateam as team1, t2.namateam as team2, j.goal1, j.goal2, j.hari, j.tempat, j.`status`, l.namaliga , j.matchday " +
+    private String SELECT_ALL_JADWAL = "SELECT j.idjadwal, t.idteam as idteam1, t.namateam as team1, t2.idteam as idteam2, t2.namateam as team2, j.goal1, j.goal2, j.hari, j.tempat, j.`status`, l.idliga, l.namaliga , j.matchday  " +
             "from jadwal j LEFT JOIN liga l ON j.liga_idliga = l.idliga " +
             "LEFT JOIN team t ON t.idteam = j.team1 " +
             "LEFT JOIN team t2 ON t2.idteam = j.team2 WHERE j.flag = 0 and j.team1 =1";
@@ -57,6 +57,7 @@ public class JadwalDaoImpl implements JadwalDao {
                     jd.setHari(rs.getTimestamp("hari").getTime());
                     jd.setTempat(rs.getString("tempat"));
                     jd.setStatus(rs.getString("status"));
+                    jd.setIdliga(rs.getInt("idliga"));
                     jd.setNamaliga(rs.getString("namaliga"));
                     jd.setMatchday(rs.getInt("matchday"));
                     return jd;
@@ -75,6 +76,7 @@ public class JadwalDaoImpl implements JadwalDao {
                     jd.setHari(rs.getTimestamp("hari").getTime());
                     jd.setTempat(rs.getString("tempat"));
                     jd.setStatus(rs.getString("status"));
+                    jd.setIdliga(rs.getInt("idliga"));
                     jd.setNamaliga(rs.getString("namaliga"));
                     jd.setMatchday(rs.getInt("matchday"));
                     return jd;

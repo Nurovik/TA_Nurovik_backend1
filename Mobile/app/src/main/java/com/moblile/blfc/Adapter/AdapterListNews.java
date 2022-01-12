@@ -56,7 +56,7 @@ public class AdapterListNews extends RecyclerView.Adapter<RecyclerView.ViewHolde
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         RecyclerView.ViewHolder vh;
-        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_people_chat, parent, false);
+        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_news, parent, false);
         vh = new OriginalViewHolder(v);
         return vh;
     }

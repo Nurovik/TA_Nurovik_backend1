@@ -76,7 +76,7 @@ public class ActivityPemain extends AppCompatActivity {
     }
 
     private static final String[] ANIMATION_TYPE = new String[]{
-            "News","klasmen",  "jadwal", "Right to Left"
+            "News","klasmen",  "jadwal", "login"
     };
 
     private void showSingleChoiceDialog() {
@@ -104,7 +104,11 @@ public class ActivityPemain extends AppCompatActivity {
                     in.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                     getApplicationContext().startActivity(in);
                 } else if (selected.equalsIgnoreCase("login")) {
-//                    animation_type = ItemAnimation.RIGHT_LEFT;
+
+                    Intent in = new Intent(getApplicationContext(), ActivityLogin.class);
+                    in.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    getApplicationContext().startActivity(in);
+
                 }
 //                getSupportActionBar().setTitle(selected);
 //                setAdapter();

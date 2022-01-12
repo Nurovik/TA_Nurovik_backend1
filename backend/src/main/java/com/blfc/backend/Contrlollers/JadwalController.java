@@ -268,7 +268,7 @@ public class JadwalController {
             @RequestHeader(required = false, value = "username")String username,
             @RequestHeader(required =  false, value = "token") String token,
             @PathVariable(value = "id") final Integer id,
-            @RequestParam("idliga")  int idliga,
+            @RequestParam("idliga")  String idliga,
             @RequestBody final Map<String,Object>Request
 
     ) throws IOException {
@@ -341,7 +341,7 @@ public class JadwalController {
             if(cekid != null){
                 if(jd !=null){
 
-                    oke = jadwalService.updatejadwal(jd,idliga,id);
+                    oke = jadwalService.updatejadwal(jd,Integer.parseInt(idliga),id);
 
                     if (oke > 0) {
                         // message = "Data Berhasil dirubah";

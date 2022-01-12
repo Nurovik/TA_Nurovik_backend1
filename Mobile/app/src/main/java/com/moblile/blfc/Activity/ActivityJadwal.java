@@ -80,7 +80,7 @@ public class ActivityJadwal extends AppCompatActivity {
     }
 
     private static final String[] ANIMATION_TYPE = new String[]{
-            "News", "pemain", "Liga", "Login"
+            "News", "pemain", "klasmen", "Login"
     };
 
     private void showSingleChoiceDialog() {
@@ -96,13 +96,24 @@ public class ActivityJadwal extends AppCompatActivity {
                     Intent in = new Intent(getApplicationContext(), ActivityNews.class);
                     in.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                     getApplicationContext().startActivity(in);
+
                 } else if (selected.equalsIgnoreCase("pemain")) {
+
                     Intent in = new Intent(getApplicationContext(), ActivityPemain.class);
                     in.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                     getApplicationContext().startActivity(in);
-                } else if (selected.equalsIgnoreCase("Liga")) {
+
+                } else if (selected.equalsIgnoreCase("klasmen")) {
+
+                    Intent in = new Intent(getApplicationContext(), ActivityKlasmen.class);
+                    in.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    getApplicationContext().startActivity(in);
 
                 } else if (selected.equalsIgnoreCase("Login")) {
+
+                    Intent in = new Intent(getApplicationContext(), ActivityLogin.class);
+                    in.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    getApplicationContext().startActivity(in);
 
                 }
 
@@ -156,16 +167,12 @@ public class ActivityJadwal extends AppCompatActivity {
                     }
                     else if(statusCode.equals("02"))
                     {
-                        // Token bermasalah (Expired, tidak sesuai, dll) -> Arahkan ke logout, login ulang
-//                        mSession.logoutUser();
                         Toast.makeText(getApplicationContext(), message, Toast.LENGTH_LONG).show();
                     }
                     else
                     {
 
-//                        rvListproyek.setAdapter(null);
-//                        setAdapter(null);
-//                        llKosong.setVisibility(View.VISIBLE);
+
 
                     }
                 }
@@ -185,7 +192,7 @@ public class ActivityJadwal extends AppCompatActivity {
     }
 
     private void setAdapter(List<Jadwal> items) {
-        recyclerView = (RecyclerView) findViewById(R.id.recyclerViewklasmen);
+        recyclerView = (RecyclerView) findViewById(R.id.recyclerViewjadwal);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         if(items == null){

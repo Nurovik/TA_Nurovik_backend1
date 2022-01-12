@@ -35,6 +35,17 @@ public class Jadwal {
     @SerializedName("matchday")
     private int matchday;
 
+    @SerializedName("idliga")
+    private int idliga;
+
+    public int getIdliga() {
+        return idliga;
+    }
+
+    public void setIdliga(int idliga) {
+        this.idliga = idliga;
+    }
+
     public int getId() {
         return id;
     }

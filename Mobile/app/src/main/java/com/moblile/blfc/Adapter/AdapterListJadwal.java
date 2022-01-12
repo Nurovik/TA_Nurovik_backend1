@@ -1,23 +1,16 @@
 package com.moblile.blfc.Adapter;
-
 import android.content.Context;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
-
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.moblile.blfc.Model.Jadwal;
 import com.moblile.blfc.Model.Pemain;
 import com.moblile.blfc.R;
 import com.moblile.blfc.Util.ConvertDate;
 import com.moblile.blfc.Util.ItemAnimation;
-import com.moblile.blfc.Util.Utils;
-import com.squareup.picasso.Picasso;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -78,7 +71,7 @@ public class AdapterListJadwal extends RecyclerView.Adapter<RecyclerView.ViewHol
             OriginalViewHolder view = (OriginalViewHolder) holder;
             ConvertDate convert = new ConvertDate();
             Jadwal n = items.get(position);
-            view.namaliga.setText(n.getNamaliga());
+            view.namaliga.setText(n.getNamaliga() +  " | Score : "  + n.getGoal1() + "-" + n.getGoal2());
             view.status.setText(n.getStatus());
             view.hari.setText(convert.convertlongtodate(n.getHari()));
             view.tempat.setText(n.getTempat());

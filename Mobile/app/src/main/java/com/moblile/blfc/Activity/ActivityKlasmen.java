@@ -88,10 +88,13 @@ public class ActivityKlasmen extends AppCompatActivity {
                     Intent in = new Intent(getApplicationContext(), ActivityNews.class);
                     in.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                     getApplicationContext().startActivity(in);
+
                 } else if (selected.equalsIgnoreCase("pemain")) {
                     Intent in = new Intent(getApplicationContext(), ActivityPemain.class);
+
                     in.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                     getApplicationContext().startActivity(in);
+
                 } else if (selected.equalsIgnoreCase("jadwal")) {
 
                     Intent in = new Intent(getApplicationContext(), ActivityJadwal.class);
@@ -99,6 +102,10 @@ public class ActivityKlasmen extends AppCompatActivity {
                     getApplicationContext().startActivity(in);
 
                 } else if (selected.equalsIgnoreCase("login")) {
+
+                    Intent in = new Intent(getApplicationContext(), ActivityLogin.class);
+                    in.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    getApplicationContext().startActivity(in);
 
                 }
 

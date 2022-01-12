@@ -105,6 +105,10 @@ public class ActivityNewsDetail extends AppCompatActivity {
                     getApplicationContext().startActivity(in);
                 } else if (selected.equalsIgnoreCase("Login")) {
 
+                    Intent in = new Intent(getApplicationContext(), ActivityLogin.class);
+                    in.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    getApplicationContext().startActivity(in);
+
                 } else if (selected.equalsIgnoreCase("News")) {
 
                     Intent in = new Intent(getApplicationContext(), ActivityNews.class);
